@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style_FAQ.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo"> 
+                <a href="index.html"><img src="img_gerais/logo_locatolica.png" width="230px" height="170px" ></a></div>
+        </div>
+        <nav>
+            <ul>
+                    <strong><li><a href="index.html">Home</a></li></strong>
+                        <strong><li><a href="lista_blocos.html">Blocos</a></li></strong>
+                            <strong><li><a href="restaurante.html">Restaurantes</a></li></strong>
+                                <strong><li><a href="FAQ.html">FAQ</a></li></strong>
+                                    
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 class="h1"><strong>FAQ - PERGUNTAS FREQUENTES</strong></h1>
+<main>
+<button class="accordion">COMO POSSO ENCONTRAR INFORMAÇÕES SOBRE OS BLOCOS?</button>
+<div class="panel">
+<p>• &nbsp;&nbsp;Acesse a página "Blocos" no menu superior da tela e clique no bloco desejado para visualizar informações detalhadas sobre ele.</p>
+<br>
+</div>
+
+
+<button class="accordion">AS PÁGINAS DOS BLOCOS INCLUEM O QUÊ?</button>
+<div class="panel">
+<p>• &nbsp;&nbsp;Cada página de bloco contém informações escritas sobre o bloco, incluindo departamentos, salas e outras informações relevantes.</p>
+<br>
+</div>
+
+<button class="accordion">AONDE ENCONTRO INFORMAÇÕES SOBRE RESTAURANTES/LANCHONETES DO CAMPUS?</button>
+<div class="panel">
+<p>• &nbsp;&nbsp;Na página "Restaurantes" no menu superior da tela, você verá uma lista com o horário de funcionamento, a localização (bloco) e fotos de cada restaurante. </p>
+<br>
+</div>
+
+<button class="accordion">OS BLOCOS POSSUEM ACESSIBILIDADE PARA PESSOAS COM DEFICIÊNCIA?</button>
+<div class="panel">
+<p>• &nbsp;&nbsp;Sim, todos os blocos do campus são adaptados para garantir acessibilidade, incluindo rampas e elevadores.</p>
+<br>
+</div>
+
+<button class="accordion">COMO SEI QUAIS SERVIÇOS ESTÃO DISPONÍVEIS EM CADA BLOCO?</button>
+<div class="panel">
+<p>• &nbsp;&nbsp;As informações sobre serviços disponíveis em cada bloco estão detalhadas na página dedicada a eles.</p>
+<br>
+</div>
+
+<button class="accordion">EXISTE WI-FI DISPONÍVEL NO CAMPUS?</button>
+<div class="panel">
+<p>• &nbsp;&nbsp;Sim, o campus oferece Wi-Fi gratuito para estudantes e funcionários. Para acessar, utilize seu login institucional.</p>
+<br>
+</div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</main>
+
+<footer>
+    <h4>Endereço Campus I: QS 07, Lote 01, Taguatinga Sul - Taguatinga, Brasília - DF, 71966-700</h4>
+</footer>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+
+</body>
+</html>
+

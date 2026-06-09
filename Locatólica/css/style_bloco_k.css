@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #90caf9;
+    padding: 0px 20px;
+    height: 80px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #002366;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #002366;
+    font-size: 1rem;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Evita quebra de linha entre os elementos */
+    flex: 1;
+    gap: 20px;
+}
+
+.voltar {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.conteudo {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    height: 390px;
+}
+
+.imagem {
+    flex: 1;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+}
+
+.imagem img {
+    max-width: 100%;
+    
+    
+}
+
+.informacoes {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto; /* Permite rolagem apenas no texto */
+    max-height: 390px; /* Limita a altura do texto */
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.descricao h2, .salas h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.topico {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #90caf9;
+    text-align: center;
+    padding: 10px 0;
+    color: #002366;
+    font-size: 0.9rem;
+    height: 75px;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .imagem {
+        position: static; /* Remove o efeito de fixação em telas menores */
+    }
+    .informacoes {
+        max-height: none; /* Remove limite de altura em telas pequenas */
+        overflow-y: visible; /* Remove rolagem */
+    }
+}

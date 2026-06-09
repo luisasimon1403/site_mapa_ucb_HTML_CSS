@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #90caf9;
+    padding: 0px 20px;
+    height: 80px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #002366;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #002366;
+    font-size: 1rem;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.voltar {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.conteudo {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    padding-left: 20px; /* Ajuste conforme preferir */
+    height: 390px;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.descricao h2, .salas h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.topico {
+    padding-left: 20px; /* Ajuste conforme preferir */
+}
+
+footer {
+    background-color: #90caf9;
+    text-align: center;
+    padding: 10px 0;
+    color: #002366;
+    font-size: 0.9rem;
+    height: 75px;
+}
+
+
+
+h4{
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

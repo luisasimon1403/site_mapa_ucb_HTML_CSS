@@ -1,0 +1,153 @@
+html, body {
+  height: 100%; /* Faz a página ocupar toda a altura da janela */
+  margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo e empurra o footer para o final */
+
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #90caf9;
+    padding: 0px 20px;
+    height: 80px;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #002366;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #002366;
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .info-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .info-box {
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: relative; /* Necessário para centralizar verticalmente */
+    top: 57%; /* Move para o meio da página */
+    transform: translateY(-50%); /* Ajusta a posição para o centro exato */
+    border-left: 4px solid #90caf9; /* Linha decorativa na lateral esquerda */
+    border-right: 4px solid #90caf9; /* Linha decorativa na lateral direita */
+    margin-right: 20px; /* Distância da caixa até o mapa */
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Espaço entre título e parágrafos */
+    height: 325px;
+
+
+}
+
+.info-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center; /* Centraliza o texto do título */
+    border-bottom: 2px solid #ddd; /* Linha inferior do título */
+    padding-bottom: 10px; /* Espaçamento interno do título */
+
+}
+
+.info-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    border-bottom: 2px solid #ddd; /* Linha inferior do título */
+    padding-bottom: 10px; /* Espaçamento interno do título */
+
+
+}
+.info-box p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+p{
+    margin-top: 0px;
+}
+  
+  .map-box {
+    flex: 1;
+  }
+  
+  .map-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    
+  }
+  
+  .map-box img {
+    max-width: 95%;
+    border-radius: 8px;
+    margin-left: 30px;
+
+  }
+
+  .titulo{
+    margin-right: 330px;
+    text-align: center;
+    font-size: 23px;
+  }
+  
+  footer {
+    background-color: #90caf9;
+    text-align: center;
+    padding: 12px 0;
+    color: #002366;
+    font-size: 0.9rem;
+    height: 55px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+
+  
